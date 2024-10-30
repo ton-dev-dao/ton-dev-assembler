@@ -14,8 +14,8 @@ num-traits = '0.2'
 serde = { features = [ 'derive' ], version = '1.0' }
 serde_json = '1.0'
 thiserror = '1.0'
-ever_block = { git = 'https://github.com/ton-dev-dao/ton-dev-block.git', tag = '1.11.20' }
-ever_vm = { git = 'https://github.com/ton-dev-dao/ton-dev-vm.git', tag = '2.2.21' }
+ton_dev_block = { git = 'https://github.com/ton-dev-dao/ton-dev-block.git', tag = '1.11.20' }
+ton_dev_vm = { git = 'https://github.com/ton-dev-dao/ton-dev-vm.git', tag = '2.2.21' }
 
 [features]
 gosh = [  ]
