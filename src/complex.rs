@@ -747,7 +747,7 @@ fn compile_inline_computed_cell(engine: &mut Engine, par: &[&str], destination: 
     };
 
     // initialize and run vm
-    let mut vm = ever_vm::executor::Engine::with_capabilities(capabilities).setup_with_libraries(
+    let mut vm = ton_dev_vm::executor::Engine::with_capabilities(capabilities).setup_with_libraries(
         code, None, None, None, vec![]);
     match vm.execute() {
         Err(_e) => {

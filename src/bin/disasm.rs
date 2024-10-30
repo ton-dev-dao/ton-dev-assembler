@@ -15,7 +15,7 @@ use std::{process::ExitCode, collections::HashSet, io::Write};
 
 use clap::{Parser, Subcommand};
 
-use ever_assembler::disasm::{fmt::print_tree_of_cells, loader::Loader, disasm_ex};
+use ton_dev_assembler::disasm::{fmt::print_tree_of_cells, loader::Loader, disasm_ex};
 use ton_dev_block::{error, Cell, Status, read_boc, SliceData, write_boc};
 
 #[derive(Parser)]

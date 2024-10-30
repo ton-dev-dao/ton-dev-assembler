@@ -15,7 +15,7 @@ use std::{error::Error, io::Write, process::ExitCode};
 
 use clap::Parser;
 
-use ever_assembler::{DbgInfo, Engine, Units};
+use ton_dev_assembler::{DbgInfo, Engine, Units};
 use ton_dev_block::Cell;
 
 #[derive(Parser)]
