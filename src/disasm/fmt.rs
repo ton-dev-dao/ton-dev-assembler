@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-use ever_block::{Cell, Result, SliceData};
+use ton_dev_block::{Cell, Result, SliceData};
 use super::{
     types::{Instruction, InstructionParameter, Code},
     codedict::DelimitedHashmapE

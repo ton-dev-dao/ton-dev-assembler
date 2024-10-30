@@ -13,7 +13,7 @@
 
 use std::collections::{BTreeMap, HashMap};
 use std::{marker::PhantomData, ops::Range};
-use ever_block::{error, BuilderData, Cell, HashmapE, HashmapType, SliceData, Status};
+use ton_dev_block::{error, BuilderData, Cell, HashmapE, HashmapType, SliceData, Status};
 
 use super::errors::{
     OperationError, ParameterError,
@@ -818,7 +818,7 @@ fn compile_library_cell(_engine: &mut Engine, par: &[&str], destination: &mut Un
 
     let mut b = BuilderData::with_raw(vec!(0x02), 8)?;
     b.append_raw(hash.as_slice(), 256)?;
-    b.set_type(ever_block::CellType::LibraryReference);
+    b.set_type(ton_dev_block::CellType::LibraryReference);
 
     let mut dbg = DbgNode::default();
     dbg.append_node(DbgNode::default());

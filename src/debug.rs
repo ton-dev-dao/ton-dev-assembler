@@ -13,7 +13,7 @@
 
 use serde::{Serialize, ser::SerializeMap, Deserialize, de::{Error, MapAccess, Visitor}};
 use std::collections::BTreeMap;
-use ever_block::{Cell, UInt256};
+use ton_dev_block::{Cell, UInt256};
 
 #[derive(Clone, Debug, Default, Serialize, Deserialize, PartialEq, Eq)]
 pub struct DbgPos {

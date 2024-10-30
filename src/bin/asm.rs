@@ -16,7 +16,7 @@ use std::{error::Error, io::Write, process::ExitCode};
 use clap::Parser;
 
 use ever_assembler::{DbgInfo, Engine, Units};
-use ever_block::Cell;
+use ton_dev_block::Cell;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
@@ -67,7 +67,7 @@ fn main_impl() -> Result<(), Box<dyn Error>> {
 }
 
 fn write_boc(cell: &Cell, output: &str) -> Result<(), Box<dyn Error>> {
-    let bytes = ever_block::write_boc(cell)?;
+    let bytes = ton_dev_block::write_boc(cell)?;
     let mut file = std::fs::File::create(output)?;
     file.write_all(&bytes)?;
     Ok(())

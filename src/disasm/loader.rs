@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-use ever_block::{Result, Cell, SliceData, fail, UInt256};
+use ton_dev_block::{Result, Cell, SliceData, fail, UInt256};
 use std::cmp::Ordering;
 use std::collections::HashMap;
 use std::ops::Not;
@@ -106,7 +106,7 @@ macro_rules! create_handler_3r {
 macro_rules! check {
     ($expr:expr) => {
         if !$expr {
-            ever_block::fail!("check failed {}:{}", file!(), line!())
+            ton_dev_block::fail!("check failed {}:{}", file!(), line!())
         }
     };
 }
@@ -114,7 +114,7 @@ macro_rules! check {
 macro_rules! check_eq {
     ($lhs:expr, $rhs:literal) => {
         if $lhs != $rhs {
-            ever_block::fail!("check failed {}:{}", file!(), line!())
+            ton_dev_block::fail!("check failed {}:{}", file!(), line!())
         }
     };
 }

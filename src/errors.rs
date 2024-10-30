@@ -11,7 +11,7 @@
 * limitations under the License.
 */
 
-use ever_block::Error;
+use ton_dev_block::Error;
 use std::fmt;
 
 #[derive(Clone, Debug, PartialEq, Eq)]

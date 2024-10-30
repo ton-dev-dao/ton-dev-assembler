@@ -12,7 +12,7 @@
 */
 
 use std::{collections::HashMap, ops::RangeInclusive};
-use ever_block::{Cell, SliceData, BuilderData};
+use ton_dev_block::{Cell, SliceData, BuilderData};
 
 pub use debug::DbgInfo;
 

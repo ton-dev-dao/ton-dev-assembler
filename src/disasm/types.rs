@@ -12,7 +12,7 @@
  */
 
 use std::{collections::HashMap, slice::ChunksMut};
-use ever_block::{Cell, Result, /*Bitmask,*/ SliceData, fail};
+use ton_dev_block::{Cell, Result, /*Bitmask,*/ SliceData, fail};
 
 #[derive(Debug, Default, Clone)]
 pub struct Code {

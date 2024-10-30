@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-use ever_block::{Result, SliceData};
+use ton_dev_block::{Result, SliceData};
 
 use super::types::{Instruction, Signaling, Quiet};
 use super::loader::*;

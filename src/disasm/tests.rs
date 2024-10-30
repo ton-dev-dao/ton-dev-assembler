@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-use ever_block::{read_boc, write_boc, SliceData, Status};
+use ton_dev_block::{read_boc, write_boc, SliceData, Status};
 
 use crate::disasm::{disasm, fmt::print_tree_of_cells};
 

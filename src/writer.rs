@@ -12,7 +12,7 @@
 */
 
 use crate::{OperationError, DbgInfo, CompileResult};
-use ever_block::{BuilderData, SliceData};
+use ton_dev_block::{BuilderData, SliceData};
 
 use crate::debug::DbgNode;
 
